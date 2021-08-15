@@ -15,6 +15,7 @@ import AmidaImage from '../../assets/amida.png';
 import Amida2Image from '../../assets/amida2.png';
 
 export function Entrance() {
+  console.log('🔥');
   const dispatch = useDispatch();
   const blogList = useSelector((state) => state.blogList.toJS());
   const [pickups, setPickups] = useState([]);
