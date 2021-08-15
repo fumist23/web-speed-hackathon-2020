@@ -9,7 +9,7 @@
     "dev:build": "npm-run-all clean build:css dev:build:webpack-with-mock-data",
     "build:css": "postcss src/app.css -d dist",
     "build:webpack-with-mock-data": "cross-env USE_MOCK_DATA=true NODE_ENV=production webpack --config webpack.config.js",
-    "dev:build:webpack-with-mock-data": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "dev:build:webpack-with-mock-data": "cross-env USE_MOCK_DATA=true NODE_ENV=development webpack --config webpack.config.js",
     "fmt": "prettier --write 'src/**/*.{js,css}'",
     "serve": "nodemon --exec babel-node lib/server.js"
   },
